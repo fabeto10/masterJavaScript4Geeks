@@ -1,16 +1,12 @@
 // Write your function here
-function removeElement(arr, param){
-    let result = arr.filter( array => array != param);
-    for( i of arr){
-        if( arr == []){
-           return []; 
-        } else if( i === param ){
-            return [];
-        } else{
-            return result
+function removeElement(arr, item){
+    let aux = [];
+    for(let i of arr){
+        if( i !== item){
+            aux.push(i);
         }
-    };
-    
+    }
+    return aux
 };
 
 let output = removeElement([1, 2, 3, 2, 1], 2);

@@ -2,11 +2,11 @@
 function filterEvenElements(arr) {
     // your code here
     let aux = [];
-    for(i of arr){
-        if(i % 2 === 0){
-            aux.push(i);          
-        };
-    };
+    for(let i of arr){
+        if( i % 2 === 0){
+            aux.push(i)
+        }
+    }
     return aux;
 };
 
