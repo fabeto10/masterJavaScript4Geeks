@@ -31,7 +31,7 @@ test('The function must return the average of all the elements in the array loca
 
 test('The function must return 0 if there\'s no property at the given key.', () => {
     let obj = {
-        key: []
+        key1: []
     };
     let output = getAverageOfElementsAtProperty(obj, 'key');
     expect(output).toBe(0);
