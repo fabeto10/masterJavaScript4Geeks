@@ -9,5 +9,11 @@ let obj2 = {
 
 function extend(obj1, obj2) {
     // your code here
+    let newObj1 = Object.keys(obj1);
+    let newObj2 = Object.keys(obj2);
 
+    for( let i = 0 ; i < newObj1.length ; i ++ ){
+        
+    }
 }
+extend(obj1, obj2);
