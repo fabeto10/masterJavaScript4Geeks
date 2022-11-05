@@ -1,4 +1,4 @@
-// Write your function here
+2// Write your function here
 let arr = ['a', 'c', 'e'];
 let obj = {
   a: 1,
@@ -7,16 +7,16 @@ let obj = {
   d: 4
 };
 
+
 function select(array, object) {
-    let aux = [];
-    let newObj = Object.keys(object);
-    for( let i = 0; i < newObj.length; i ++ ) {
-        let arrAux = array[i];
-        if(  ){
-            
-        }  
-    } 
-}
+    let newObject = new Object();
+    for( let i of array ){
+        if( object[i] ){
+            newObject[i] = object[i]
+        };
+    };
+    return newObject;
+};
 // select(arr, obj)
 let output = select(arr, obj);
 console.log(output); // --> { a: 1, c: 3 }
