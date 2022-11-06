@@ -3,7 +3,7 @@ function countAllCharacters(str){
     let newObj = new Object();
     
     if( str.length == 0){
-        return [];
+        return {};
     };
 
     for( let i = 0 ; i < str.length ; i ++ ){
