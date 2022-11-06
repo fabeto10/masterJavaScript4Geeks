@@ -4,6 +4,7 @@ let obj = {
 
 function getSquaredElementsAtProperty(obj, key) {
     // your code here
+    
 }
 
 let output = getSquaredElementsAtProperty(obj, 'key');
