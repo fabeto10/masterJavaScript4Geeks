@@ -1,10 +1,10 @@
 function getAverageOfElementsAtProperty(obj, key) {
   // your code here
-    if( obj[key].length === 0 ){
+    if(  !obj.hasOwnProperty(key)){
         return 0;
     } else if( !Array.isArray(obj[key])){
         return 0;
-    } else if( !obj.hasOwnProperty(key) ){
+    } else if( obj[key].length === 0){
         return 0;
     };
     let aux = 0;

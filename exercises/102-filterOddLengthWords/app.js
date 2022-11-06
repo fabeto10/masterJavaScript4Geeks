@@ -13,7 +13,7 @@ function filterOddLengthWords(words) {
         return [];
     } else {
         return aux;
-    }
+    };
 };
 
 let output = filterOddLengthWords(['there', 'it', 'is', 'now']);

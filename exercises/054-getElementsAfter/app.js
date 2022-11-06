@@ -1,6 +1,6 @@
-let newArr = [];
 function getElementsAfter(array, n) {
   // your code here
+    let newArr = [];
     for( let i = 0; i < array.length; i++ ){
         if( i > n){
             newArr.push(array[i]);

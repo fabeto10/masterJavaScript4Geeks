@@ -3,11 +3,11 @@ let obj = {
 };
 function getEvenLengthWordsAtProperty(obj, key) {
     // your code here
-    if( obj[key].length === 0 ){
+    if( !obj.hasOwnProperty(key) ){
         return [];
     } else if( !Array.isArray(obj[key]) ){
         return [];
-    } else if( !obj.hasOwnProperty(key) ){
+    } else if( obj[key].length === 0 ){
         return [];
     };
     let aux = [];
