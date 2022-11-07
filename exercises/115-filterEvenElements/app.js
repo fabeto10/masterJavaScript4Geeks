@@ -5,8 +5,8 @@ function filterEvenElements(arr) {
     for(let i of arr){
         if( i % 2 === 0){
             aux.push(i)
-        }
-    }
+        };
+    };
     return aux;
 };
 
