@@ -1,6 +1,7 @@
 function detectOutlierValue(string) {
     // your code here
-}
+    
+};
 
 // Third number is odd, while the rest of the numbers are even
 console.log(detectOutlierValue("2 4 7 8 10")); // => 3 
