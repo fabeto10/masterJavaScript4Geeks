@@ -1,13 +1,14 @@
 function transformEmployeeData(array) {
   // your code here
-  let obj = {};
-  for(let i = 0 ; i < array.length ; i++ ){
-      obj[array[i][0]] = array[i][1];
-    //   for(let j = 0 ; j < i.length ; j++){
-    //       return j;
-    //   }
-  };
-  return obj;
+    let result = [];
+    for(let i of array){
+        let aux = {};
+        for(let j of i ){
+            aux[j[0]] = j[1];
+        };
+        result.push(aux);
+    };
+    return result;
 };
 
 let output = transformEmployeeData([[['firstName', 'Joe'], ['lastName', 'Blow'], ['age', 42], ['role', 'clerk']],[['firstName', 'Mary'], ['lastName', 'Jenkins'], ['age', 36], ['role', 'manager']]]);
